@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # Implementasi Affine Cipher di Python
  
 # Algoritma Euclidean yang Diperluas untuk menemukan invers modular
@@ -27,7 +21,6 @@ def modinv(a, m):
  
 # affine cipher encryption function
 # returns the cipher text
-dibawah ini fungsi enkripsi untuk menentukan cipher teks
 def affine_encrypt(text, key):
     '''
     C = (a*P + b) % 26
@@ -35,7 +28,7 @@ def affine_encrypt(text, key):
     return ''.join([ chr((( key[0]*(ord(t) - ord('A')) + key[1] ) % 26)
                   + ord('A')) for t in text.upper().replace(' ', '') ])
  
- menentukan fungsi deskripsi
+ 
 # affine cipher decryption function
 # returns original text
 def affine_decrypt(cipher, key):
@@ -66,10 +59,3 @@ if __name__ == '__main__':
     main()
 # This code is contributed by
 # Bhushan Borole
-
-
-# In[ ]:
-
-
-
-
