@@ -50,7 +50,7 @@ def affine_decrypt(cipher, key):
 def main():
     # declaring text and key
     text = 'NINDYA VINALIA MASHAR MESWARI'
-    key = [7, 4]
+    key = [7, 3]
  
     # calling encryption function
     affine_encrypted_text = affine_encrypt(text, key)
